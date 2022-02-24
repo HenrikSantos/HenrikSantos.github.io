@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /* variaveis */
 :root{
     --hue_color: 250;
@@ -11,12 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration:none;
 }
+
 body{
     z-index: 0;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(138, 138, 138);
 }
 /* header inteiro */
 .nav-container{
@@ -27,21 +30,32 @@ body{
     justify-content: space-around;
 
     max-width: 80rem;
-    height: 4rem;
+    height: 6rem;
 
     margin: 0 auto;
     padding: 0 25px;
-    background-color: hsl(0, 0%, 26%);
 }
 
 /* logo */
-h1{
+.titulo{
     z-index: 2;
 
-    color: #FFF;
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight:200;
+    font-size: 36px;
+    line-height: 46px;
+    align-items: center;
+    text-align: start;
+    letter-spacing: .7rem;
+    
+
+color: #000000;
+
+text-shadow: rgba(0, 0, 0, .8) 0px 4px 4px;
+}
+.titulo p:nth-child(1){
+    font-size: 50px;
 }
 /* Botão */
 .hamburger{
@@ -67,7 +81,7 @@ h1{
     height: 4px;
     
     margin-bottom: 5px;
-    background-color: #c5c5c5;
+    background-color: #000000;
     border-radius: 6px;
     
     transform-origin: 0 0;
@@ -76,7 +90,7 @@ h1{
 }
 .hamburger:hover span:nth-child(2){
     transform: translateX(10px);
-    background-color: #FFF;
+    background-color: rgb(0, 0, 0);
 }
 .hamburger.is-active span:nth-child(1){
     transform: translate(0px, -2px) rotate(45deg);
@@ -86,7 +100,7 @@ h1{
     transform:translateX(15px)
 }
 .hamburger.is-active:hover span{
-    background-color: #FFF;
+    background-color: rgb(0, 0, 0);
 }
 .hamburger.is-active span:nth-child(3){
     transform: translate(-3px, 3px) rotate(-45deg);
@@ -101,12 +115,24 @@ h1{
     padding: 10px; 
 }
 .menu a{
-    color:#FFF;
+    
     margin: 0 16px;
     text-decoration: none;
     transition: 0.4s;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 275;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.225em;
 
+    color: #000000;
+
+    text-shadow: rgba(0, 0, 0, .8) 0px 4px 4px;
 }
+
 .menu-is-active{
     z-index: 2;
     
@@ -119,7 +145,7 @@ h1{
 
 
     inset: 64px 0 0 40%;
-    background: hsla(0, 0%, 100%, 0.103);
+    background: hsla(0, 0%, 95%, 0.103);
     backdrop-filter: blur(.1rem);
 
     padding: 0 10px;
@@ -134,11 +160,47 @@ h1{
 }
 
 .menu a.is-active, .menu a:hover{
-    border: 2px solid var(--main_color_darker);
-    background-color: rgb(187, 187, 187);
-    padding: 20px 40px;
-}
 
+    color: rgb(255, 223, 39);
+
+}
+.bem-vindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: auto;
+    padding: 200px 0px;
+
+    
+}
+.bem-vindo :nth-child(1){
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+letter-spacing: 0.225em;
+margin-bottom: 100px;
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bem-vindo :nth-child(2){
+font-family: 'Poppins', sans-serif;
+font-style: italic;
+font-weight: 300;
+font-size: 96px;
+line-height: 72px;
+text-align: center;
+letter-spacing: 0.225em;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /* Responsividade */
 @media (min-width: 768px){
     .hamburger{
