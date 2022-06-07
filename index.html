@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    , initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Henrik Santos</title>
 </head>
+
 <body>
+    <!-- ===== Header ===== -->
     <!-- ===== Nav ===== -->
     <nav class="nav-container">
-            <div class="titulo">
-                <p>Henrik</p>
-                <p>R.Souza</p>
-            </div>    
-            <div class="menu">
-                <a href="/" class="skills">SKILLS</a>
-                <a href="/" class="portfolio">PORTFOLIO</a>
-                <a href="/" class="formacao">FORMAÇÃO</a>  
-                <a href="/" class="formacao">CONTATO</a>          
-            </div>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <div class="titulo">
+            <p>Henrik</p>
+            <p>R.Souza</p>
+        </div>
+        <div class="menu">
+            <a href="#sobre" class="menu-sobre">SOBRE</a>
+            <a href="#skills" class="menu-skills">SKILLS</a>
+            <a href="#portfolio" class="menu-portfolio">PORTFOLIO</a>
+            <a href="#formacao" class="menu-formacao">FORMAÇÃO</a>
+            <a href="#contato" class="menu-formacao">CONTATO</a>
+        </div>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
-    <!-- ===== Header ===== -->
 
-
-    <!-- ====== Main ====== -->   
+    <!-- ====== Main ====== -->
     <main>
         <section class="bem-vindo">
             <span>BEM VINDO AO MEU</span>
             <span>PORTFÓLIO!</span>
         </section>
+
+
+        <section id="sobre">
+            <div class="sobre-container">
+                <div>
+                    <img src="img/minha-foto.jpg" alt="uma foto minha" id="foto-minha" />
+                </div>
+                <div class="descricao">
+                    <p>
+                        Olá me chamo Henrik, (também conhecido como Gimmi), e sou apaixonado
+                        por códigos, jogos e arte. Tenho um canal no Youtube onde falo sobre
+                        programação, modelagem 3D e outras tecnologias!
+                    </p>
+                    <p>
+                        Sou Brasileiro nascido em Cascavel - PR mas atualmente moro em Pindamonhangaba - SP.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills-container">
+                <div id="skill-html">
+                    <h1>HTML</h1>
+                    <p></p>
+                </div>
+                <div id="skill-css">
+                    <h1>CSS</h1>
+                    <p></p>
+                </div>
+                <div id="skill-javascript">
+                    <h1>JavaScript</h1>
+                    <p></p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <!-- ===== JavaScript ===== -->
-    <script src="js/main.js">
-    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
