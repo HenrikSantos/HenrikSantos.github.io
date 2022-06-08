@@ -21,9 +21,27 @@ body{
     z-index: 0;
     background-color: rgb(138, 138, 138);
 }
+.elementos-gerais{
+    max-width: 80rem;
+    /* background-color: aliceblue; */
+    height: auto;
+    margin: auto;
+}
+.italic{
+    font-style: italic;
+    font-size: 120%;
+}
+a{
+    color: antiquewhite;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
 /* header inteiro */
 .nav-container{
     z-index:1;
+    background-color: rgba(0, 0, 0, .0);
 
     display: flex;
     align-items: center;
@@ -34,6 +52,9 @@ body{
 
     margin: 0 auto;
     padding: 0 25px;
+
+    position: sticky;
+    top: 0px;
 }
 
 /* logo */
@@ -169,7 +190,7 @@ text-shadow: rgba(0, 0, 0, .8) 0px 4px 4px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    /* max-width: 80rem; */
     margin: auto;
     padding: 100px 0px;
     height: 90vh;
@@ -200,31 +221,42 @@ color: #000000;
 
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#sobre{
-    height: 100vh;
-    background-color: rgba(102, 102, 102, 0.596);
 
+
+/* sobre  */
+.sobre{
+    background-color: rgba(156, 156, 156, 0.815);
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(252, 252, 252); */
 }
 .sobre-container{
     display: flex;
     align-items: center;
-    width: auto;
-    gap: 50px;
-    padding: 100px;
+    gap: 100px;
+    padding: 150px;
     font-family: Helvetica, sans-serif;
     margin: auto;
     max-width: 80rem;
+    height: 0px;
+    /* background-color: antiquewhite; */
+    height: 95vh;
 }
 #foto-minha{
     height:300px;
     border-radius:50%;
     width:300px;
     object-fit: cover;
+    border: solid 3px #0000007e;
 }
 .descricao{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.74);
 }
 
 /* Responsividade */
