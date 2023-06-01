@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "nomeInstituicao": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP",
+      "areaDeEstudo": "Curso Técnico Integrado, Ciências da Computação e Informática",
+      "diploma": "Técnico",
+      "dataInicio": "2017",
+      "dataFim": "2019",
+      "competencias": [".NET Framework", "Kanban", "Scrum", "Banco de dados", "SQL", "Web design", "Git", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "nomeInstituicao": "Universidade Cruzeiro do Sul",
+      "areaDeEstudo": "Análise e Desenvolvimento de Sistemas",
+      "diploma": "Tecnólogo",
+      "dataInicio": "mai de 2020",
+      "dataFim": "fev de 2021",
+      "competencias": ["Modelagem de Dados", "Técnicas de Desenvolvimento de Algoritmos", "Conjuntos Numéricos"]
+    },
+    {
+      "nomeInstituicao": "Trybe",
+      "areaDeEstudo": "Desenvolvimento Web Full Stack",
+      "diploma": "Técnico",
+      "dataInicio": "mai de 2022",
+      "dataFim": "jun de 2023",
+      "competencias": ["TypeScript", "Node.js", "MongoDB", "Jest", "React.js", "Python", "Express.js", "Linux", "JSON", "Automação de testes", "Kanban", "NoSQL", "Scrum", "Bancos de dados relacionais", "Banco de dados", "SQL", "API REST", "Web design", "Web Design Responsivo", "Teste de integração", "HTML5", "HTML semântico", "Git", "JavaScript", "Sequelize.js", "Bootstrap", "MySQL", "HTML", "CSS", "Redux.js"]
+    }    
+  ]
+}
