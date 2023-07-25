@@ -1,10 +1,7 @@
 const Header = function () {
 
 	return (
-		<header className="
-			top-0 hidden
-			md:sticky md:mx-auto md:flex md:w-8/12 md:items-center md:justify-between md:px-0 md:py-4 md:align-middle md:backdrop-blur-sm
-     "
+		<header className="top-0 z-10 hidden md:sticky md:mx-auto md:flex md:w-8/12 md:items-center md:justify-between md:px-0 md:py-4 md:align-middle md:backdrop-blur-sm"
 		>
 			<div className="flex justify-between">
 				<a

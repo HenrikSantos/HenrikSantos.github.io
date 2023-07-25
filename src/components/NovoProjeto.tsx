@@ -1,3 +1,5 @@
+
+
 interface NovoProjetoProps {
 	img: string,
 	nome: string,
@@ -7,16 +9,20 @@ interface NovoProjetoProps {
 	link: string
 }
 
-export default function NovoProjeto({
-	img,
-	nome,
-	descricao,
-	repositorio,
-	stacks,
-	link,
-}: NovoProjetoProps) {
+export default function NovoProjeto(
+	{
+		img,
+		nome,
+		descricao,
+		repositorio,
+		stacks,
+		link,
+	}
+: NovoProjetoProps) {
+
 	return (
-		<div className='secundary mx-auto mt-5 w-11/12 rounded'>
+		<div className='secundary mx-auto my-5 w-11/12 rounded' data-aos="fade-left"
+			data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 			<img
 				src={`/static/images/${img}`}
 				alt={`${nome}`}
@@ -33,8 +39,8 @@ export default function NovoProjeto({
 					}
 				</div>
 				<p className='mt-5 flex gap-3'>
-					<a href={repositorio} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 hover:bg-[var(--emphasis)] '>Repositório</a>
-					<a href={link} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 hover:bg-[var(--emphasis)] '>Acessar</a>
+					<a href={repositorio} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Repositório</a>
+					<a href={link} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Acessar</a>
 				</p>
 			</div>
 		</div>

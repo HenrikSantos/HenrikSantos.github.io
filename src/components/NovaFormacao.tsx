@@ -16,7 +16,7 @@ export default function NovaFormacao({
 	dataFim,
 }: NovaFormacaoProps) {
 	return (
-		<div>
+		<div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 			<h1 className='emphasis text-2xl'>{nomeInstituicao}</h1>
 			<h2>{`${diploma}, ${areaDeEstudo}`}</h2>
 			<p className='text-sm font-extralight'>{`${dataInicio} - ${dataFim}`}</p>
