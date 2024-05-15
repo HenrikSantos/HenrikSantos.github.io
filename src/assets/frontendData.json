@@ -1,0 +1,132 @@
+{
+    "frontendData": [
+        {
+            "nome": "Clone do reddit",
+            "descricao": "Um clone do reddit feito com angular.",
+            "repositorio": "https://github.com/HenrikSantos/angular-reddit-clone",
+            "link": "https://angular-reddit-clone-green.vercel.app",
+            "img": "redditClone.webp",
+            "stacks": [
+                "Angular",
+                "Tailwind"
+            ],
+            "id": 1
+        },
+        {
+            "nome": "Gerador de currículo",
+            "descricao": "Um gerador de currículo.",
+            "repositorio": "https://github.com/HenrikSantos/next-gerador-de-curriculo",
+            "link": "https://next-gerador-de-curriculo.vercel.app/",
+            "img": "curriculo.webp",
+            "stacks": [
+                "Next.js",
+                "Tailwind",
+                "Shadcn",
+                "Zustand",
+                "Zod",
+                "Jest",
+                "Bun"
+            ],
+            "id": 2
+        },
+        {
+            "nome": "Firebase Twitter Clone",
+            "descricao": "Clone do Twitter utilizando Firestore, O objetivo principal deste projeto é replicar algumas das funcionalidades básicas do Twitter, permitindo aos usuários criar postagens, comentar postagens e dar 'like'.",
+            "repositorio": "https://github.com/HenrikSantos/js-firebase-twitter-clone",
+            "link": "https://js-firebase-twitter-clone.vercel.app/",
+            "img": "twitterClone.webp",
+            "stacks": [
+                "Next.js",
+                "Firestore",
+                "Tailwind",
+                "Zustand",
+                "Jest",
+                "Firebase Authentication"
+            ],
+            "id": 3
+        },
+        {
+            "nome": "Trybe Trivia",
+            "descricao": "Um jogo de perguntas e respostas baseado no jogo Trivia, (tipo um show do milhão americano).",
+            "repositorio": "https://github.com/HenrikSantos/Projeto-Trivia",
+            "link": "https://projeto-trivia-murex.vercel.app/",
+            "img": "trivia.webp",
+            "stacks": [
+                "Javascript",
+                "React",
+                "Redux",
+                "Kanban",
+                "API"
+            ],
+            "id": 4
+        },
+        {
+            "nome": "Todo List",
+            "descricao": "É uma lista de fazeres, é possível adicionar tarefa, marcar como completa, editar e excluir, além disso, as tarefas são salvas no navegador usando local storage.",
+            "repositorio": "https://github.com/HenrikSantos/todo-app-with-TypeScript",
+            "link": "https://todo-app-with-typescript-one.vercel.app/",
+            "img": "todolistcomtypescript.webp",
+            "stacks": [
+                "React",
+                "Context",
+                "TypeScript",
+                "Bootstrap"
+            ],
+            "id": 5
+        },
+        {
+            "nome": "TrybeTunes",
+            "descricao": "Um site de musicas feito usando a API do Itunes, é possivel realizar buscas, filtrar e escutar musicas.",
+            "repositorio": "https://github.com/HenrikSantos/TrybeTunes",
+            "link": "https://trybe-tunes-ochre.vercel.app/",
+            "img": "trybetunes.webp",
+            "stacks": [
+                "React",
+                "React Router",
+                "API",
+                "Javascript",
+                "Bootstrap"
+            ],
+            "id": 6
+        },
+        {
+            "nome": "Portal De Noticias",
+            "descricao": "Desafio técnico para a vaga de software developer voluntário na Tech Pro Bem",
+            "repositorio": "https://github.com/HenrikSantos/portal-de-noticias",
+            "link": "https://portal-de-noticias-two.vercel.app/",
+            "img": "portaldenoticias.webp",
+            "stacks": [
+                "React",
+                "Next.js",
+                "Tailwind"
+            ],
+            "id": 7
+        },
+        {
+            "nome": "Front End Online Store",
+            "descricao": "É uma loja online feito usando a API do Mercado Livre.",
+            "repositorio": "https://github.com/HenrikSantos/FrontEnd-Online-Store",
+            "link": "https://frontend-online-store-beige.vercel.app/",
+            "img": "frontendonlinestore.webp",
+            "stacks": [
+                "React",
+                "React Router",
+                "Kanban"
+            ],
+            "id": 8
+        },
+        {
+            "nome": "Leadster SPA",
+            "descricao": "Desafio técnico para a vaga de frontend developer na Leadster.",
+            "repositorio": "https://github.com/HenrikSantos/leadster-test-spa",
+            "link": "https://leadster-test-spa.vercel.app/",
+            "img": "leadster.webp",
+            "stacks": [
+                "React",
+                "Next.js",
+                "Tailwind"
+            ],
+            "id": 9
+        }
+    ]
+}

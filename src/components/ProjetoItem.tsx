@@ -1,11 +1,11 @@
 
 interface ProjetoItemProps {
-	img: string,
+	img?: string,
 	nome: string,
 	descricao: string,
 	repositorio: string,
 	stacks: string[],
-	link: string
+	link?: string
 }
 
 export default function ProjetoItem(
@@ -20,14 +20,16 @@ export default function ProjetoItem(
 : ProjetoItemProps) {
 
   return (
-    <div className='secundary mx-auto my-5 w-11/12 rounded' data-aos="fade-left"
+    <div className='secundary mx-auto my-5 w-11/12 rounded shadow' data-aos="fade-left"
       data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-      <img
-        src={`/static/images/${img}`}
-        alt={`${nome}`}
-        className='mx-auto w-auto rounded-t-md md:w-full'
-      />
-      <div className='px-2 pb-5 pt-3'>
+      { 
+        img && <img
+          src={`/static/images/${img}`}
+          alt={`${nome}`}
+          className='mx-auto w-auto rounded-t-md md:w-full'
+        />
+      }
+      <div className='px-5 pb-5 pt-3'>
         <h1 className='emphasis text-2xl font-semibold'>{ nome }:</h1>
         <p className='my-2 tracking-tight'>{ descricao }</p>
         <div className='flex flex-wrap gap-2'>
@@ -38,8 +40,8 @@ export default function ProjetoItem(
           }
         </div>
         <p className='mt-5 flex gap-3'>
-          <a href={repositorio} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Repositório</a>
-          <a href={link} target='_blank' rel="noreferrer" className='primary rounded border-[var(--emphasis)] p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Acessar</a>
+          <a href={repositorio} target='_blank' rel="noreferrer" className='primary rounded border border-white/60 p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Repositório</a>
+          { link && <a href={link} target='_blank' rel="noreferrer" className='primary rounded border border-white/60 p-2 px-5 font-semibold hover:bg-[var(--emphasis)]'>Acessar</a> }
         </p>
       </div>
     </div>
