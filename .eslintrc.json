@@ -1,0 +1,78 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:tailwindcss/recommended"
+    ],
+    "ignorePatterns": [
+        "node_modules/",
+        "**/node_modules/",
+        " /**/node_modules/*",
+        "dist/",
+        "build/",
+        "src/components/ui/",
+        "src/components/lib/"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "eqeqeq": "error",
+        "no-unused-vars": "error",
+        "no-var": "error",
+        "prefer-const": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "arrow-spacing": "error",
+        "no-extra-semi": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "prefer-arrow-callback": "error",
+        "prefer-template": "error",
+        "no-extra-parens": "error",
+        "no-use-before-define": "error",
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "function"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            }
+        ],
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "react/react-in-jsx-scope": 0
+    }
+}
