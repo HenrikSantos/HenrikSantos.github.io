@@ -24,11 +24,17 @@ const Header = function () {
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#stack">
 					Stack
         </a>
-        <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
-					Projetos
-        </a>
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#formacao">
 					Formação
+        </a>
+        <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
+					Frontend
+        </a>
+        <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
+					Backend
+        </a>
+        <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
+					Outros
         </a>
       </nav>
     </header>
