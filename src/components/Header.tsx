@@ -18,7 +18,7 @@ const Header = function () {
       <nav
         className={`
 					mt-0
-					flex min-h-full w-4/12 flex-row justify-end gap-5 px-3 text-lg font-normal
+					flex min-h-full w-8/12 flex-row justify-end gap-5 px-3 text-lg font-normal
 				`}
       >
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#stack">
@@ -28,10 +28,10 @@ const Header = function () {
 					Formação
         </a>
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
-					Frontend
+					Front-end
         </a>
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
-					Backend
+					Back-end
         </a>
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#projetos">
 					Outros
