@@ -15,7 +15,7 @@ export default function Sobre() {
         </h2>
         <div className='my-3 space-y-2 font-thin'>
           <p>
-						- Sou técnico de informática formado no IFSP e cursei um ano de ADS, às vezes brinco de fazer joguinhos com Unity/Unreal 🎮.
+          - 👋 Olá, meu nome é Henrik, sou desenvolvedor WEB Full Stack, atualmente aluno em Análise e Desenvolvimento de Sistemas na Fatec Taubaté, estou em busca do meu primeiro emprego como desenvolvedor, às vezes brinco de fazer joguinhos com Unity/Unreal 🎮.
           </p>
           <p>
 						- Tenho um canal no YouTube onde ensino programação 💻.
