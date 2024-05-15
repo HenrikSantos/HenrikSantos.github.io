@@ -1,5 +1,5 @@
 
-import NovoProjeto from "./NovoProjeto";
+import ProjetoItem from "./ProjetoItem";
 import { data } from "../assets/projetosData.json";
 
 export default function Projetos() {
@@ -10,7 +10,7 @@ export default function Projetos() {
       </h1>
       {
         data.map((projeto) => 
-          <NovoProjeto 
+          <ProjetoItem 
             key={projeto.id}
             img={projeto.img}
             nome={projeto.nome}

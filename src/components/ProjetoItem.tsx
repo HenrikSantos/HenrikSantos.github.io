@@ -1,5 +1,5 @@
 
-interface NovoProjetoProps {
+interface ProjetoItemProps {
 	img: string,
 	nome: string,
 	descricao: string,
@@ -8,7 +8,7 @@ interface NovoProjetoProps {
 	link: string
 }
 
-export default function NovoProjeto(
+export default function ProjetoItem(
   {
     img,
     nome,
@@ -17,7 +17,7 @@ export default function NovoProjeto(
     stacks,
     link,
   }
-: NovoProjetoProps) {
+: ProjetoItemProps) {
 
   return (
     <div className='secundary mx-auto my-5 w-11/12 rounded' data-aos="fade-left"

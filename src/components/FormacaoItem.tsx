@@ -1,5 +1,5 @@
 
-interface NovaFormacaoProps {
+interface FormacaoItemProps {
 	nomeInstituicao: string,
 	areaDeEstudo: string,
 	diploma?: string,
@@ -8,14 +8,14 @@ interface NovaFormacaoProps {
 	competencias: string[]
 }
 
-export default function NovaFormacao({
+export default function FormacaoItem({
   nomeInstituicao,
   diploma,
   areaDeEstudo,
   competencias,
   dataInicio,
   dataFim,
-}: NovaFormacaoProps) {
+}: FormacaoItemProps) {
   return (
     <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
       <h1 className='emphasis text-2xl'>{nomeInstituicao}</h1>

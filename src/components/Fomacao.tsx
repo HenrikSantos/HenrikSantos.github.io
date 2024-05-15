@@ -1,5 +1,5 @@
 
-import NovaFormacao from "./NovaFormacao";
+import FormacaoItem from "./FormacaoItem";
 import { data } from "../assets/formacaoData.json";
 
 export default function Fomacao() {
@@ -9,7 +9,7 @@ export default function Fomacao() {
       <div className='flex flex-col space-y-5'>
         {
           data.map((formacao) => 
-            <NovaFormacao
+            <FormacaoItem
               key={`${formacao.nomeInstituicao + formacao.diploma}`}
               areaDeEstudo={formacao.areaDeEstudo}
               nomeInstituicao={formacao.nomeInstituicao}
