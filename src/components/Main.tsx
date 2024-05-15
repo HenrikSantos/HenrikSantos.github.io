@@ -12,8 +12,8 @@ export default function Main() {
         <Sobre />
         <div className='flex w-full flex-col space-y-10 border-[var(--emphasis)] px-7 pb-6 md:border-l'>
           <Stack />
-          <Projetos />
           <Fomacao />
+          <Projetos />
         </div>
       </div>
     </main>

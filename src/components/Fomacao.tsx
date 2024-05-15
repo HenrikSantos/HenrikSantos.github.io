@@ -1,6 +1,6 @@
 
 import NovaFormacao from "./NovaFormacao";
-import { data } from "./formacaoData.json";
+import { data } from "../assets/formacaoData.json";
 
 export default function Fomacao() {
   return (

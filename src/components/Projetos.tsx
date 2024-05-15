@@ -1,6 +1,6 @@
 
 import NovoProjeto from "./NovoProjeto";
-import { data } from "./projetosData.json";
+import { data } from "../assets/projetosData.json";
 
 export default function Projetos() {
   return (
