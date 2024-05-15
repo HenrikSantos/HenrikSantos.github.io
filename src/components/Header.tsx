@@ -22,7 +22,7 @@ const Header = function () {
 				`}
       >
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#stack">
-					Stack
+					Tech Stack
         </a>
         <a className="my-[0.30rem] rounded p-[0.35rem] font-semibold tracking-wider hover:bg-[#383838]/50" href="#formacao">
 					Formação
