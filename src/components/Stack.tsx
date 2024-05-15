@@ -5,10 +5,10 @@ export default function Stack() {
       <h1 className='mb-1'><span className='text-4xl font-semibold'>Tech Stack:</span></h1>
       <ul className='mx-3 flex flex-col space-y-1 font-thin'>
         <li>
-					- <span className='text-lg underline'>Front End</span>: HTML, CSS, Javascript, TypeScript, React, Redux, Tailwind e Bootstrap;
+					- <span className='text-lg underline'>Front-end</span>: HTML, CSS, Javascript, TypeScript, React, Redux, Tailwind e Bootstrap;
         </li>
         <li>
-					- <span className='text-lg underline'>Back End</span>: Python, Node, Express, MySql, MongoDB, Mongoose e Sequelize;
+					- <span className='text-lg underline'>Back-end</span>: Python, Node, Express, MySql, MongoDB, Mongoose e Sequelize;
         </li>
         <li>
 					- <span className='text-lg underline'>QA</span>: Jest, Vitest, Mocha, Chai, Sinon e Pytest;
