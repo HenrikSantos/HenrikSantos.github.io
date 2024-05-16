@@ -31,7 +31,7 @@
         },
         {
             "nome": "Firebase Twitter Clone",
-            "descricao": "Clone do Twitter utilizando Firestore, O objetivo principal deste projeto é replicar algumas das funcionalidades básicas do Twitter, permitindo aos usuários criar postagens, comentar postagens e dar 'like'.",
+            "descricao": "Clone do Twitter utilizando Firestore. O objetivo principal deste projeto é replicar algumas das funcionalidades básicas do Twitter, permitindo aos usuários criar postagens, comentar postagens e dar 'like'.",
             "repositorio": "https://github.com/HenrikSantos/js-firebase-twitter-clone",
             "link": "https://js-firebase-twitter-clone.vercel.app/",
             "img": "twitterClone.webp",
@@ -47,7 +47,7 @@
         },
         {
             "nome": "Trybe Trivia",
-            "descricao": "Um jogo de perguntas e respostas baseado no jogo Trivia, (tipo um show do milhão americano).",
+            "descricao": "Um jogo de perguntas e respostas baseado no jogo Trivia, (um tipo de show do milhão americano).",
             "repositorio": "https://github.com/HenrikSantos/Projeto-Trivia",
             "link": "https://projeto-trivia-murex.vercel.app/",
             "img": "trivia.webp",
@@ -91,7 +91,7 @@
         },
         {
             "nome": "Portal De Noticias",
-            "descricao": "Desafio técnico para a vaga de software developer voluntário na Tech Pro Bem",
+            "descricao": "Desafio técnico para a vaga de software developer voluntário na Tech Pro Bem.",
             "repositorio": "https://github.com/HenrikSantos/portal-de-noticias",
             "link": "https://portal-de-noticias-two.vercel.app/",
             "img": "portaldenoticias.webp",

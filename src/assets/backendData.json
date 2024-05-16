@@ -15,7 +15,7 @@
         },
         {
             "nome": "Api-express",
-            "descricao": "Backend para um gerencia uma loja de celulares.",
+            "descricao": "API para gerenciar uma loja de celulares.",
             "repositorio": "https://github.com/HenrikSantos/lexart-cellphone-backend",
             "link": "https://lexart-cellphone-frontend.vercel.app/",
             "stacks": [
