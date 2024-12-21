@@ -20,6 +20,7 @@
         "src/components/lib/"
     ],
     "rules": {
+        "eslint-plugin-vue/no-extra-parens": false,
         "indent": [
             "error",
             2
