@@ -5,8 +5,8 @@
       "cargo": "Full Stack Developer",
       "nivel": "Júnior",
       "dataInicio": "jun de 2024",
-      "dataFim": "o momento",
-      "descricao": "Atuei como programador no desenvolvimento e manutenção de sistemas frontend e backend utilizando React, TypeScript, Tailwind CSS, Firebase, e tecnologias de computação em nuvem da Google Cloud Platform, como Cloud Functions, além de integrar IA generativa e Dialogflow para criar chatbots inteligentes em plataformas como WhatsApp, Facebook Messenger e Telegram.",
+      "dataFim": "jan de 2025",
+      "descricao": "Atuei como programador no desenvolvimento e manutenção de sistemas frontend, backend e chatbot utilizando React, TypeScript, Tailwind CSS, Firebase, e tecnologias de computação em nuvem da Google Cloud Platform, como Cloud Functions, além de integrar IA generativa e Dialogflow para criar chatbots inteligentes em plataformas como WhatsApp, Facebook Messenger e Telegram.",
       "competencias": [
         "React",
         "Firebase",
@@ -19,6 +19,27 @@
         "Banco de dados",
         "Tailwind",
         "Kanban"
+      ]
+    },
+    {
+      "nomeDaEmpresa": "CroSoften",
+      "cargo": "Backend Developer",
+      "nivel": "Pleno",
+      "dataInicio": "mar de 2025",
+      "dataFim": "o momento",
+      "descricao": "Desenvolvedor Backend especializado na construção e manutenção de APIs RESTful e Gateways WebSocket de alta performance para diversos clientes. Foco em código limpo, escalável e de fácil manutenção, aplicando os princípios SOLID e Clean Code. As principais tecnologias utilizadas são: Node.js, TypeScript, NestJS, Express, Prisma, TypeORM, MySQL, MongoDB, Postman, Swagger e AWS.",
+      "competencias": [
+        "Node.ks",
+        "TypeScript",
+        "NestJS",
+        "Express",
+        "Prisma",
+        "TypeORM",
+        "MySQL",
+        "MongoDB",
+        "Postman",
+        "Swagger",
+        "S3"
       ]
     }
   ]

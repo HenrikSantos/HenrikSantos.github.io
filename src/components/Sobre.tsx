@@ -14,24 +14,19 @@ export default function Sobre() {
         </h2>
         <div className="my-3 space-y-2 font-thin">
           <p>
-            - 👋 Meu nome é Henrik, tenho 23 anos, e atualmente curso Análise e
-            Desenvolvimento de Sistemas na Fatec de Taubaté.
+            - 👋 Meu nome é Henrik, tenho {`${(new Date()).getFullYear() - 2001}`} anos, sou desenvolvedor Full Stack e Backend Pleno. Já prestei serviços para empresas nacionais e internacionais, sendo responsável pela prototipação, modelagem de banco de dados, arquitetura, implementação de APIs REST, Cron Jobs e integração com APIs externas.
           </p>
           <p>
-            - Tenho experiência em desenvolvimento web, principalmente com
-            React, TypeScript, Firebase e Cloud Functions.
+            - Foco em desenvolvimento web, tenho experiência com React, TypeScript, Nestjs, Prisma, TypeORM, Mysql, MongoDB, Swagger, AWS e Google Cloud Platform.
           </p>
           <p>
-            - Estou em busca de novas oportunidades devido a incertezas do
-            futuro da empresa onde atuo.
+            - Estou aberto a novas oportunidades 🚀.
           </p>
           <p>
-            - Sou uma pessoa organizada, calma e resiliente, com facilidade para
-            aprender.
+            - Sou uma pessoa organizada, calma e resiliente, com facilidade para aprender.
           </p>
           <p>
-            - Meus hobbies são: programação, arte 2D/3D, jogos, criptografia e
-            tecnologia 🎨.
+            - Meus hobbies são: programação, arte 2D/3D, jogos, IA 🤖 e tecnologia.
           </p>
           <p>
             E-mail:{" "}

@@ -3,7 +3,10 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+
+AOS.init({
+  once: true,
+});
 
 function App() {
 
