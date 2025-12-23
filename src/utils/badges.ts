@@ -97,6 +97,14 @@ const badgeMap: Record<string, BadgeConfig> = {
   Asaas: { color: "1A1A2E" },
   SendGrid: { color: "1A82E2" },
   Brevo: { color: "0B996E" },
+  "Cron Jobs": { color: "4A5568" },
+  "Cloud Storage": { logo: "googlecloud", color: "4285F4" },
+  "Cloud Functions": { logo: "googlecloud", color: "4285F4" },
+  EC2: { logo: "amazonec2", color: "FF9900" },
+  RDS: { logo: "amazonrds", color: "527FFF" },
+  SOLID: { color: "007ACC" },
+  "Clean Code": { color: "2ECC71" },
+  "Arquitetura de Software": { color: "9B59B6" },
 };
 
 const defaultBadge: BadgeConfig = { color: "555555" };

@@ -18,6 +18,7 @@ const badgeCategories: BadgeCategory[] = [
       "API REST",
       "WebSocket",
       "SSE",
+      "Cron Jobs",
     ],
   },
   {
@@ -31,14 +32,23 @@ const badgeCategories: BadgeCategory[] = [
       "MySQL",
       "MariaDB",
       "MongoDB",
-      "Firebase",
+      "Firestore",
       "Prisma",
       "TypeORM",
     ],
   },
   {
     title: "Cloud",
-    badges: ["GCP", "AWS", "S3"],
+    badges: [
+      "GCP",
+      "Firebase",
+      "Cloud Storage",
+      "Cloud Functions",
+      "AWS",
+      "EC2",
+      "S3",
+      "RDS",
+    ],
   },
   {
     title: "Ferramentas",
@@ -47,6 +57,10 @@ const badgeCategories: BadgeCategory[] = [
   {
     title: "Integrações",
     badges: ["Stripe", "Pagar.me", "Asaas", "SendGrid", "Brevo"],
+  },
+  {
+    title: "Boas Práticas",
+    badges: ["SOLID", "Clean Code", "Arquitetura de Software"],
   },
 ];
 
