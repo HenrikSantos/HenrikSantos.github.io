@@ -1,16 +1,16 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init({
-  once: true,
-});
+import MobileMenu from "./components/MobileMenu";
+import ScrollProgress from "./components/ScrollProgress";
+import GradientMesh from "./components/GradientMesh";
 
 function App() {
   return (
     <>
+      <ScrollProgress />
+      <GradientMesh />
+      <MobileMenu />
       <Header />
       <Main />
       <Footer />
