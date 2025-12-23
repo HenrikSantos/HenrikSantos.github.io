@@ -21,7 +21,8 @@ const Header = function () {
         "
       >
         {[
-          { href: "#stack", label: "Tech Stack" },
+          { href: "#stack", label: "Tecnologias" },
+          { href: "#trajetoria", label: "Minha História" },
           { href: "#experiencia", label: "Experiência" },
           { href: "#formacao", label: "Formação" },
           { href: "#frontend", label: "Projetos" },
