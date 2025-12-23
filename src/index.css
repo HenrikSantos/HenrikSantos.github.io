@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-    --emphasis: #24c0eb;
-    --primary: #082b34;
-    --secundary: #07323d;
+  --emphasis: #24c0eb;
+  --primary: #082b34;
+  --secundary: #07323d;
 }
 
 .primary {
-    @apply bg-[var(--primary)]
-};
+  @apply bg-[var(--primary)];
+}
 
 .secundary {
-    @apply bg-[var(--secundary)]
+  @apply bg-[var(--secundary)];
 }
 
 .emphasis {
-    @apply text-[var(--emphasis)]
+  @apply text-[var(--emphasis)];
 }
