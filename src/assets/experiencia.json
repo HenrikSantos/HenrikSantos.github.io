@@ -1,6 +1,27 @@
 {
   "data": [
     {
+      "nomeDaEmpresa": "CroSoften",
+      "cargo": "Backend Developer",
+      "nivel": "Pleno",
+      "dataInicio": "mar de 2025",
+      "dataFim": "o momento",
+      "descricao": "Desenvolvedor Backend especializado na construção e manutenção de APIs RESTful e Gateways WebSocket de alta performance para diversos clientes. Foco em código limpo, escalável e de fácil manutenção, aplicando os princípios SOLID e Clean Code. As principais tecnologias utilizadas são: Node.js, TypeScript, NestJS, Express, Prisma, TypeORM, MySQL, MongoDB, Postman, Swagger e AWS.",
+      "competencias": [
+        "Node.js",
+        "TypeScript",
+        "NestJS",
+        "Express",
+        "Prisma",
+        "TypeORM",
+        "MySQL",
+        "MongoDB",
+        "Postman",
+        "Swagger",
+        "S3"
+      ]
+    },
+    {
       "nomeDaEmpresa": "Pode Perguntar",
       "cargo": "Full Stack Developer",
       "nivel": "Júnior",
@@ -14,32 +35,38 @@
         "TypeScript",
         "Node",
         "GCP",
-        "Front-end",
-        "Back-end",
+        "Frontend",
+        "Backend",
         "Banco de dados",
         "Tailwind",
         "Kanban"
       ]
     },
     {
-      "nomeDaEmpresa": "CroSoften",
-      "cargo": "Backend Developer",
-      "nivel": "Pleno",
-      "dataInicio": "mar de 2025",
-      "dataFim": "o momento",
-      "descricao": "Desenvolvedor Backend especializado na construção e manutenção de APIs RESTful e Gateways WebSocket de alta performance para diversos clientes. Foco em código limpo, escalável e de fácil manutenção, aplicando os princípios SOLID e Clean Code. As principais tecnologias utilizadas são: Node.js, TypeScript, NestJS, Express, Prisma, TypeORM, MySQL, MongoDB, Postman, Swagger e AWS.",
+      "nomeDaEmpresa": "Americanas S.A",
+      "cargo": "Assistente de loja",
+      "nivel": "Tempo integral",
+      "dataInicio": "nov de 2021",
+      "dataFim": "fev de 2022",
+      "descricao": "Responsável por atender clientes, fechamento do caixa, organizar produtos nas prateleiras, manter a loja limpa, execução de promoções e campanhas, conferência de estoque e no recebimento de mercadorias.",
       "competencias": [
-        "Node.ks",
-        "TypeScript",
-        "NestJS",
-        "Express",
-        "Prisma",
-        "TypeORM",
-        "MySQL",
-        "MongoDB",
-        "Postman",
-        "Swagger",
-        "S3"
+        "Atendimento ao cliente",
+        "Organização",
+        "Trabalho em equipe"
+      ]
+    },
+    {
+      "nomeDaEmpresa": "Litoral MED",
+      "cargo": "Assistente administrativo",
+      "nivel": "Aprendiz",
+      "dataInicio": "mar de 2020",
+      "dataFim": "out de 2020",
+      "descricao": "Responsável por realizar o suporte administrativo, incluindo controle e organização de documentos, arquivos e planilhas, atendimento por telefone e e-mail, lançamentos financeiros, emissão de notas fiscais, preparar relatórios gerenciais e acompanhar prazos e pendências para garantir o bom funcionamento do setor.",
+      "competencias": [
+        "Administração",
+        "Organização",
+        "Atendimento ao cliente",
+        "Finanças"
       ]
     }
   ]
