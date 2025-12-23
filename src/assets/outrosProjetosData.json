@@ -1,17 +1,12 @@
 {
-    "outrosProjetosData": [
-        {
-            "nome": "RC Commands",
-            "descricao": "rc-commands é uma ferramenta de interface de linha de comando (CLI) projetada para simplificar o processo de criação de componentes no React. Inspirada no ng do Angular, esta CLI agiliza a geração e organização de componentes em projetos React.",
-            "repositorio": "https://github.com/HenrikSantos/rc-commands",
-            "link": "https://www.npmjs.com/package/rc-commands",
-            "stacks": [
-                "Javascript",
-                "Jest",
-                "npm",
-                "fs"
-            ],
-            "id": 1
-        }
-    ]
+  "outrosProjetosData": [
+    {
+      "nome": "RC Commands",
+      "descricao": "rc-commands é uma ferramenta de interface de linha de comando (CLI) projetada para simplificar o processo de criação de componentes no React. Inspirada no ng do Angular, esta CLI agiliza a geração e organização de componentes em projetos React.",
+      "repositorio": "https://github.com/HenrikSantos/rc-commands",
+      "link": "https://www.npmjs.com/package/rc-commands",
+      "stacks": ["Javascript", "Jest", "npm", "fs"],
+      "id": 1
+    }
+  ]
 }

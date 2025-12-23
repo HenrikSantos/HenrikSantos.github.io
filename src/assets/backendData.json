@@ -1,47 +1,37 @@
 {
-    "backendData": [
-        {
-            "nome": "Java-restful-api-springboot-3",
-            "descricao": "API restful para Posts.",
-            "repositorio": "https://github.com/HenrikSantos/java-restful-api-springboot-3",
-            "stacks": [
-                "Java",
-                "Springboot 3",
-                "Swagger",
-                "Postgres",
-                "Mermaid"
-            ],
-            "id": 1
-        },
-        {
-            "nome": "Api-express",
-            "descricao": "API para gerenciar uma loja de celulares.",
-            "repositorio": "https://github.com/HenrikSantos/lexart-cellphone-backend",
-            "link": "https://lexart-cellphone-frontend.vercel.app/",
-            "stacks": [
-                "Express",
-                "Typescript",
-                "Sequelize",
-                "Json Web Token",
-                "Joi",
-                "Helmet",
-                "bcrypt",
-                "Sqlite",
-                "Postgres",
-                "Vercel"
-            ],
-            "id": 2
-        },
-        {
-            "nome": "C-sharp-todo-api",
-            "descricao": "API para um aplicativo de todo list.",
-            "repositorio": "https://github.com/HenrikSantos/C-sharp-todo-api/",
-            "stacks": [
-                ".NET",
-                "Entity Framework",
-                "Sql Server"
-            ],
-            "id": 3
-        }
-    ]
+  "backendData": [
+    {
+      "nome": "Java-restful-api-springboot-3",
+      "descricao": "API restful para Posts.",
+      "repositorio": "https://github.com/HenrikSantos/java-restful-api-springboot-3",
+      "stacks": ["Java", "Springboot 3", "Swagger", "Postgres", "Mermaid"],
+      "id": 1
+    },
+    {
+      "nome": "Api-express",
+      "descricao": "API para gerenciar uma loja de celulares.",
+      "repositorio": "https://github.com/HenrikSantos/lexart-cellphone-backend",
+      "link": "https://lexart-cellphone-frontend.vercel.app/",
+      "stacks": [
+        "Express",
+        "Typescript",
+        "Sequelize",
+        "Json Web Token",
+        "Joi",
+        "Helmet",
+        "bcrypt",
+        "Sqlite",
+        "Postgres",
+        "Vercel"
+      ],
+      "id": 2
+    },
+    {
+      "nome": "C-sharp-todo-api",
+      "descricao": "API para um aplicativo de todo list.",
+      "repositorio": "https://github.com/HenrikSantos/C-sharp-todo-api/",
+      "stacks": [".NET", "Entity Framework", "Sql Server"],
+      "id": 3
+    }
+  ]
 }
