@@ -14,25 +14,32 @@ export default function Sobre() {
         </h2>
         <div className="my-3 space-y-2 font-thin">
           <p>
-            - 👋 Meu nome é Henrik, tenho {`${(new Date()).getFullYear() - 2001}`} anos, sou desenvolvedor Full Stack e Backend Pleno. Já prestei serviços para empresas nacionais e internacionais, sendo responsável pela prototipação, modelagem de banco de dados, arquitetura, implementação de APIs REST, Cron Jobs e integração com APIs externas.
+            - 👋 Meu nome é Henrik, tenho {`${new Date().getFullYear() - 2001}`}{" "}
+            anos, sou desenvolvedor Full Stack e Backend Pleno. Já prestei
+            serviços para empresas nacionais e internacionais, sendo responsável
+            pela prototipação, modelagem de banco de dados, arquitetura,
+            implementação de APIs REST, Cron Jobs e integração com APIs
+            externas.
           </p>
           <p>
-            - Foco em desenvolvimento web, tenho experiência com React, TypeScript, Nestjs, Prisma, TypeORM, Mysql, MongoDB, Swagger, AWS e Google Cloud Platform.
+            - Foco em desenvolvimento web, tenho experiência com React,
+            TypeScript, Nestjs, Prisma, TypeORM, Mysql, MongoDB, Swagger, AWS e
+            Google Cloud Platform.
+          </p>
+          <p>- Estou aberto a novas oportunidades 🚀.</p>
+          <p>
+            - Sou uma pessoa organizada, calma e resiliente, com facilidade para
+            aprender.
           </p>
           <p>
-            - Estou aberto a novas oportunidades 🚀.
-          </p>
-          <p>
-            - Sou uma pessoa organizada, calma e resiliente, com facilidade para aprender.
-          </p>
-          <p>
-            - Meus hobbies são: programação, arte 2D/3D, jogos, IA 🤖 e tecnologia.
+            - Meus hobbies são: programação, arte 2D/3D, jogos, IA 🤖 e
+            tecnologia.
           </p>
           <p>
             E-mail:{" "}
             <a
               href="mailto:henrik.ruan4@gmail.com?subject=Olá, Henrik!&body=Gostaria de conversar sobre [insira o assunto aqui]."
-              className="underline font-semibold text-blue-600 hover:text-blue-800"
+              className="font-semibold text-blue-600 underline hover:text-blue-800"
             >
               henrik.ruan4@gmail.com
             </a>
