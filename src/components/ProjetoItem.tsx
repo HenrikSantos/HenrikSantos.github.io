@@ -1,3 +1,5 @@
+import { buildBadgeUrl } from "../utils/badges";
+
 interface ProjetoItemProps {
   img?: string;
   nome: string;
@@ -17,7 +19,7 @@ export default function ProjetoItem({
 }: ProjetoItemProps) {
   return (
     <div
-      className="secundary ml-3 mt-8 rounded shadow"
+      className="secundary ml-3 rounded shadow"
       data-aos="fade-left"
       data-aos-anchor-placement="top-bottom"
       data-aos-duration="1500"
@@ -34,12 +36,12 @@ export default function ProjetoItem({
         <p className="my-2 tracking-tight">{descricao}</p>
         <div className="flex flex-wrap gap-2">
           {stacks.map((tec) => (
-            <span
+            <img
               key={tec}
-              className="rounded-xl border border-[var(--emphasis)] px-2 text-sm font-extralight hover:cursor-pointer hover:bg-[var(--primary)]"
-            >
-              {tec}
-            </span>
+              src={buildBadgeUrl(tec)}
+              alt={tec}
+              className="h-5"
+            />
           ))}
         </div>
         <p className="mt-5 flex gap-3">

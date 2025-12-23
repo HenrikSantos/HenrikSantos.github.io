@@ -1,3 +1,5 @@
+import { buildBadgeUrl } from "../utils/badges";
+
 interface ExperienciaItemProps {
   nomeDaEmpresa: string;
   cargo: string;
@@ -31,12 +33,12 @@ export default function ExperienciaItem({
       <p>{descricao}</p>
       <div className="mt-3 flex flex-wrap gap-2">
         {competencias.map((competencia) => (
-          <span
+          <img
             key={competencia}
-            className="rounded-xl border border-[var(--emphasis)] px-2 text-sm font-extralight hover:cursor-pointer hover:bg-[var(--primary)]"
-          >
-            {competencia}
-          </span>
+            src={buildBadgeUrl(competencia)}
+            alt={competencia}
+            className="h-5"
+          />
         ))}
       </div>
     </div>

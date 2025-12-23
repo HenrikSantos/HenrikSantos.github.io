@@ -5,7 +5,7 @@ export default function Fomacao() {
   return (
     <section id="formacao">
       <h1 className="mb-1 text-4xl font-bold">Formação:</h1>
-      <div className="ml-3 flex flex-col space-y-5">
+      <div className="ml-3 flex flex-col space-y-8">
         {data.map((formacao) => (
           <FormacaoItem
             key={`${formacao.nomeInstituicao + formacao.diploma}`}

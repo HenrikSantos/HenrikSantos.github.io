@@ -5,7 +5,7 @@ export default function Experiencia() {
   return (
     <section id="experiencia">
       <h1 className="mb-1 text-4xl font-bold">Experiência profissional:</h1>
-      <div className="ml-3 flex flex-col space-y-5">
+      <div className="ml-3 flex flex-col space-y-8">
         {data.map((experiencia) => (
           <ExperienciaItem
             key={`${experiencia.nomeDaEmpresa}-${experiencia.cargo}`}
