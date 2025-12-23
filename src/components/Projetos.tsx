@@ -4,7 +4,7 @@ import OutrosProjetos from "./OutrosProjetos";
 
 export default function Projetos() {
   return (
-    <section className='mt-6'>
+    <section className="space-y-5">
       <ProjetosFrontend />
       <ProjetosBackend />
       <OutrosProjetos />

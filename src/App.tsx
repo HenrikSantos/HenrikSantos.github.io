@@ -9,7 +9,6 @@ AOS.init({
 });
 
 function App() {
-
   return (
     <>
       <Header />
