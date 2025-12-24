@@ -116,7 +116,7 @@ export default function Stack() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: categoryIndex * 0.1 + badgeIndex * 0.03 }}
-                  whileHover={{ scale: 1.15, y: -2 }}
+
                 />
               ))}
             </div>
