@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --emphasis: #24c0eb;
-  --primary: #082b34;
-  --secundary: #07323d;
+  --emphasis: #ff1c2d;
+  --emphasis-light: #ff3847;
+  --emphasis-dark: #e60012;
+  --accent-blue: #00d4f7;
+  --accent-blue-light: #00e8ff;
+  --accent-blue-dark: #00b8d9;
+  --primary: #0a0a12;
+  --secondary: #121218;
+  --surface: #1a1a24;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
 }
 
 html {
@@ -14,14 +22,19 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: var(--primary);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% 50%, transparent 0%, var(--primary) 100%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, rgba(20, 20, 35, 0.8) 0%, var(--primary) 70%);
+  background-attachment: fixed;
 }
 
 .primary {
   @apply bg-[var(--primary)];
 }
 
-.secundary {
-  @apply bg-[var(--secundary)];
+.secondary {
+  @apply bg-[var(--secondary)];
 }
 
 .emphasis {
