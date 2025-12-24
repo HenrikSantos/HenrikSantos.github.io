@@ -1,4 +1,4 @@
-const CACHE_NAME = 'henrik-portfolio-v1';
+const CACHE_NAME = 'henrik-portfolio-v2';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -29,6 +29,31 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+
+  // Assets JS/CSS usam network-first (sempre busca a versão mais nova)
+  const isAsset = url.pathname.startsWith('/assets/') ||
+                  url.pathname.endsWith('.js') ||
+                  url.pathname.endsWith('.css');
+
+  if (isAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Outros recursos usam cache-first
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
