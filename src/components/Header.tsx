@@ -142,7 +142,7 @@ const Header = function () {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mx-auto flex items-center justify-between md:px-8 lg:px-12 2xl:w-8/12 2xl:px-0">
+      <div className="mx-auto flex w-[90%] items-center justify-between 3xl:w-8/12">
         <motion.div className="flex justify-between" whileHover={{ scale: 1.02 }}>
           <a
             href="#inicio"
@@ -165,7 +165,7 @@ const Header = function () {
               className={`group relative my-[0.30rem] flex items-center gap-2 rounded-lg p-[0.35rem] px-3 font-semibold tracking-wider transition-colors ${
                 isActive
                   ? "text-[var(--emphasis)]"
-                  : "text-[#d5f6ff] hover:text-[var(--emphasis)]"
+                  : "text-text-primary hover:text-[var(--accent-blue)]"
               }`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}

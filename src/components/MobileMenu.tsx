@@ -197,7 +197,7 @@ export default function MobileMenu() {
         {isOpen && (
           <>
             <motion.div
-              className="fixed inset-0 bg-black/60 backdrop-blur-sm"
+              className="fixed inset-0 bg-primary/60 backdrop-blur-sm"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -227,7 +227,7 @@ export default function MobileMenu() {
                         className={`hover:bg-[var(--emphasis)]/20 flex items-center gap-3 rounded-lg px-4 py-3 text-lg font-medium transition-all hover:pl-6 ${
                           isActive
                             ? "bg-[var(--emphasis)]/10 border-l-2 border-[var(--emphasis)] text-[var(--emphasis)]"
-                            : "text-[#d5f6ff]"
+                            : "text-text-primary"
                         }`}
                       >
                         <span
@@ -242,7 +242,7 @@ export default function MobileMenu() {
                 })}
               </ul>
               <div className="mt-auto border-t border-white/10 pt-6">
-                <p className="text-center text-sm text-[#d5f6ff]/60">
+                <p className="text-center text-sm text-text-primary/60">
                   Henrik Santos
                 </p>
               </div>
