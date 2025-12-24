@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { buildBadgeUrl } from "../utils/badges";
+import { variants } from "../utils/animations";
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -22,22 +23,24 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
       {isOpen && (
         <>
           <motion.div
-            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-primary/80 backdrop-blur-sm"
+            variants={variants.fadeIn}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
             onClick={onClose}
           />
           <motion.div
             className="fixed inset-4 z-50 m-auto flex max-h-[90vh] max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-[var(--primary)] shadow-2xl shadow-[var(--emphasis)]/10 backdrop-blur-md md:inset-10"
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            variants={variants.modal}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
             <button
               onClick={onClose}
-              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[var(--primary)]/80 text-[#d5f6ff] transition-colors hover:border-[var(--emphasis)] hover:text-[var(--emphasis)]"
+              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-[var(--primary)]/80 text-text-primary transition-colors hover:border-[var(--emphasis)] hover:text-[var(--emphasis)]"
               aria-label="Fechar modal"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,12 +63,12 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
               <h2 className="mb-3 text-3xl font-bold text-[var(--emphasis)]">
                 {project.nome}
               </h2>
-              <p className="mb-6 text-lg leading-relaxed text-[#d5f6ff]/90">
+              <p className="mb-6 text-lg leading-relaxed text-text-primary/90">
                 {project.descricao}
               </p>
 
               <div className="mb-6">
-                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#d5f6ff]/60">
+                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-primary/60">
                   Tecnologias
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -86,7 +89,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
                     href={project.repositorio}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-semibold text-[#d5f6ff] transition-colors hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
+                    className="flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-semibold text-text-primary transition-colors hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -101,7 +104,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 rounded-lg bg-[var(--emphasis)] px-5 py-3 font-semibold text-white transition-colors hover:bg-cyan-400"
+                    className="flex items-center gap-2 rounded-lg bg-[var(--emphasis)] px-5 py-3 font-semibold text-white transition-colors hover:bg-accent-blue"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

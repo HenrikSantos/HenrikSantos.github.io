@@ -7,14 +7,14 @@ export default function Contato() {
       <AnimatedSection>
         <div className="rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
           <h1 className="mb-2 text-4xl font-bold">Vamos conversar?</h1>
-          <p className="mb-8 text-lg text-[#d5f6ff]/70">
+          <p className="mb-8 text-lg text-text-primary/70">
             Estou disponível para novas oportunidades.
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <motion.a
               href="mailto:henrik.ruan4@gmail.com?subject=Olá, Henrik!&body=Gostaria de conversar sobre [insira o assunto aqui]."
-              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-[#d5f6ff] transition-all hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
+              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-text-primary transition-all hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -37,7 +37,7 @@ export default function Contato() {
             <motion.a
               href="/static/documents/Currículo - Henrik Ruan Santos de Souza.pdf"
               download
-              className="flex items-center justify-center gap-3 rounded-lg bg-[var(--emphasis)] px-6 py-4 font-semibold text-white transition-all hover:bg-cyan-400"
+              className="flex items-center justify-center gap-3 rounded-lg bg-[var(--emphasis)] px-6 py-4 font-semibold text-white transition-all hover:bg-accent-blue"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -61,7 +61,7 @@ export default function Contato() {
               href="https://www.linkedin.com/in/henrik-santos-dev/"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-[#d5f6ff] transition-all hover:border-[#0077b5] hover:bg-[#0077b5]/20"
+              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-text-primary transition-all hover:border-accent-blue-dark hover:bg-accent-blue-dark/20"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -75,7 +75,7 @@ export default function Contato() {
               href="https://github.com/HenrikSantos"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-[#d5f6ff] transition-all hover:border-white/50 hover:bg-white/10"
+              className="flex items-center justify-center gap-3 rounded-lg border border-white/20 bg-white/5 px-6 py-4 font-semibold text-text-primary transition-all hover:border-white/50 hover:bg-white/10"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >

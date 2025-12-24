@@ -34,7 +34,7 @@ export default function ExperienciaItem({
 
       <h1 className="emphasis text-2xl font-semibold">{nomeDaEmpresa}</h1>
       <h2 className="text-lg">{`${cargo}${nivel ? `, ${nivel}` : ""}`}</h2>
-      <p className="mb-2 text-sm font-extralight text-[#d5f6ff]/60">
+      <p className="mb-2 text-sm font-extralight text-text-primary/60">
         {`${dataInicio} - ${dataFim || "Presente"}`}
       </p>
       <p className="mb-3 leading-relaxed">{descricao}</p>

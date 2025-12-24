@@ -8,7 +8,7 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <p className="text-center text-sm text-[#d5f6ff]/60">
+      <p className="text-center text-sm text-text-primary/60">
         © 2025 Henrik Ruan Santos de Souza. Todos os direitos reservados.
       </p>
     </motion.footer>

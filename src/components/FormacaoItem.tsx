@@ -32,7 +32,7 @@ export default function FormacaoItem({
 
       <h1 className="emphasis text-2xl font-semibold">{nomeInstituicao}</h1>
       <h2 className="text-lg">{`${diploma}, ${areaDeEstudo}`}</h2>
-      <p className="mb-2 text-sm font-extralight text-[#d5f6ff]/60">
+      <p className="mb-2 text-sm font-extralight text-text-primary/60">
         {`${dataInicio} - ${dataFim}`}
       </p>
       <div className="flex flex-wrap gap-2">

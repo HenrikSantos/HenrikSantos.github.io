@@ -55,7 +55,7 @@ export default function Projetos() {
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 activeFilter === filter.value
                   ? "bg-[var(--emphasis)] text-white"
-                  : "text-[#d5f6ff]/70 hover:text-[#d5f6ff]"
+                  : "text-text-primary/70 hover:text-text-primary"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

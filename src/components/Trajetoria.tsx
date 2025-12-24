@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
+import { variants } from "../utils/animations";
 
 interface TimelineItem {
   period: string;
@@ -148,20 +149,25 @@ export default function Trajetoria() {
         {/* Linha vertical da timeline */}
         <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-[var(--emphasis)] via-[var(--emphasis)]/50 to-transparent" />
 
-        {timelineData.map((item, index) => (
-          <AnimatedSection
-            key={index}
-            delay={0.1 + index * 0.15}
-            direction="left"
-          >
-            <div className="relative mb-8 pl-12">
+        <motion.div
+           variants={variants.staggerContainer}
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, margin: "-50px" }}
+        >
+          {timelineData.map((item, index) => (
+            <motion.div
+              key={index}
+              className="relative mb-8 pl-12"
+              variants={variants.fadeInLeft}
+            >
               {/* Marcador da timeline */}
               <motion.div
                 className="absolute left-0 flex h-9 w-9 items-center justify-center rounded-full border-2 border-[var(--emphasis)] bg-[var(--primary)] text-[var(--emphasis)]"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.2 + index * 0.15, type: "spring" }}
+                transition={{ delay: 0.2, type: "spring" }}
               >
                 <TimelineIcon type={item.icon} />
               </motion.div>
@@ -193,9 +199,9 @@ export default function Trajetoria() {
                   </div>
                 )}
               </motion.div>
-            </div>
-          </AnimatedSection>
-        ))}
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

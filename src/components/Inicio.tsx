@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ParticlesBackground from "./ParticlesBackground";
 import TypewriterText from "./TypewriterText";
+import { variants, transitions } from "../utils/animations";
 
 export default function Inicio() {
   return (
@@ -8,15 +9,15 @@ export default function Inicio() {
       <ParticlesBackground />
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        variants={variants.fadeInUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ ...transitions.smooth, duration: 0.8 }}
         className="-mt-32 text-center"
       >
         <motion.h1
           className="text-5xl font-thin md:text-6xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          variants={variants.fadeIn}
           transition={{ delay: 0.2 }}
         >
           BEM-VINDO AO MEU
@@ -24,8 +25,7 @@ export default function Inicio() {
 
         <motion.h1
           className="neon-text mx-auto my-4 text-center text-6xl font-medium italic underline md:text-8xl"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          variants={variants.scaleIn}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <TypewriterText text="PORTFÓLIO" delay={800} speed={120} />
@@ -34,16 +34,17 @@ export default function Inicio() {
 
       <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 8, 0] }}
+        initial={{ opacity: 1 }}
+        animate={{ y: [0, 8, 0] }}
         transition={{
-          opacity: { delay: 2 },
-          y: { repeat: Infinity, duration: 2, ease: "easeInOut" }
+          repeat: Infinity,
+          duration: 2,
+          ease: "easeInOut",
         }}
         style={{ willChange: "transform" }}
       >
         <svg
-          className="h-8 w-8 text-[var(--emphasis)]"
+          className="h-16 w-16 text-[var(--emphasis)]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

@@ -37,10 +37,10 @@ export default function ProjetoItem({
       )}
 
       <div className="p-5">
-        <h1 className="mb-2 text-xl font-bold text-[var(--emphasis)] transition-colors group-hover:text-cyan-300">
+        <h1 className="mb-2 text-xl font-bold text-[var(--emphasis)] transition-colors group-hover:text-accent-blue-light">
           {nome}
         </h1>
-        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-[#d5f6ff]/80">
+        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-text-primary/80">
           {descricao}
         </p>
 
@@ -54,7 +54,7 @@ export default function ProjetoItem({
             />
           ))}
           {stacks.length > 5 && (
-            <span className="flex h-5 items-center rounded-full bg-white/10 px-2 text-xs text-[#d5f6ff]/60">
+            <span className="flex h-5 items-center rounded-full bg-white/10 px-2 text-xs text-text-primary/60">
               +{stacks.length - 5}
             </span>
           )}
@@ -67,7 +67,7 @@ export default function ProjetoItem({
               target="_blank"
               rel="noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-sm font-medium text-[#d5f6ff] backdrop-blur-sm transition-all hover:scale-105 hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
+              className="flex items-center gap-1.5 rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-sm font-medium text-text-primary backdrop-blur-sm transition-all hover:scale-105 hover:border-[var(--emphasis)] hover:bg-[var(--emphasis)]/20"
             >
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
@@ -81,7 +81,7 @@ export default function ProjetoItem({
               target="_blank"
               rel="noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="flex items-center gap-1.5 rounded-lg bg-[var(--emphasis)] px-3 py-2 text-sm font-medium text-white transition-all hover:scale-105 hover:bg-cyan-400"
+              className="flex items-center gap-1.5 rounded-lg bg-[var(--emphasis)] px-3 py-2 text-sm font-medium text-white transition-all hover:scale-105 hover:bg-accent-blue"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
