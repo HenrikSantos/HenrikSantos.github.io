@@ -137,22 +137,23 @@ const Header = function () {
 
   return (
     <motion.header
-      className="bg-[var(--primary)]/80 top-0 z-40 hidden border-b border-white/5 backdrop-blur-md md:sticky md:mx-auto md:flex md:w-8/12 md:items-center md:justify-between md:border-none md:bg-transparent md:px-0 md:py-4"
+      className="top-0 z-40 hidden w-full border-b border-white/5 bg-[var(--primary)]/80 backdrop-blur-md md:sticky md:block md:border-none md:bg-transparent md:py-4"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <motion.div className="flex justify-between" whileHover={{ scale: 1.02 }}>
-        <a
-          href="#inicio"
-          onClick={scrollToSection}
-          className="flex gap-3 text-4xl font-bold transition-colors hover:text-[var(--emphasis)]"
-        >
-          Henrik Santos
-        </a>
-      </motion.div>
+      <div className="mx-auto flex items-center justify-between md:px-8 lg:px-12 2xl:w-8/12 2xl:px-0">
+        <motion.div className="flex justify-between" whileHover={{ scale: 1.02 }}>
+          <a
+            href="#inicio"
+            onClick={scrollToSection}
+            className="flex gap-3 text-4xl font-bold transition-colors hover:text-[var(--emphasis)]"
+          >
+            Henrik Santos
+          </a>
+        </motion.div>
 
-      <nav className="mt-0 flex min-h-full flex-row justify-end gap-1 text-lg font-normal">
+        <nav className="mt-0 flex min-h-full flex-row justify-end gap-1 text-lg font-normal">
         {navItems.map((item, index) => {
           const isActive = activeSection === item.href.substring(1);
 
@@ -190,7 +191,8 @@ const Header = function () {
             </motion.a>
           );
         })}
-      </nav>
+        </nav>
+      </div>
     </motion.header>
   );
 };
