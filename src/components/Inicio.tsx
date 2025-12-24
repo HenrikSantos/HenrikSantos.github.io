@@ -35,11 +35,12 @@ export default function Inicio() {
       <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 10, 0] }}
+        animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{
           opacity: { delay: 2 },
-          y: { repeat: Infinity, duration: 1.5, ease: "easeInOut" }
+          y: { repeat: Infinity, duration: 2, ease: "easeInOut" }
         }}
+        style={{ willChange: "transform" }}
       >
         <svg
           className="h-8 w-8 text-[var(--emphasis)]"
