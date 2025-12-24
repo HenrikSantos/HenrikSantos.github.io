@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 const Header = function () {
-  const [activeSection, setActiveSection] = useState<string>("inicio");
+  const activeSection = useActiveSection();
 
   const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -17,45 +17,6 @@ const Header = function () {
       });
     }
   };
-
-  // Intersection Observer para detectar seção ativa
-  useEffect(() => {
-    const sections = [
-      "inicio",
-      "stack",
-      "trajetoria",
-      "experiencia",
-      "formacao",
-      "frontend",
-      "contato",
-    ];
-
-    const observers: IntersectionObserver[] = [];
-
-    sections.forEach((sectionId) => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                setActiveSection(sectionId);
-              }
-            });
-          },
-          {
-            rootMargin: "-30% 0px -70% 0px",
-          }
-        );
-        observer.observe(element);
-        observers.push(observer);
-      }
-    });
-
-    return () => {
-      observers.forEach((observer) => observer.disconnect());
-    };
-  }, []);
 
   const navItems = [
     {
