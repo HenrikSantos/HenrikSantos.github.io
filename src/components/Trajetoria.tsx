@@ -182,9 +182,9 @@ export default function Trajetoria() {
                   <span className="rounded-full bg-[var(--emphasis)]/10 px-3 py-1 text-sm font-medium text-[var(--emphasis)]">
                     {item.period}
                   </span>
-                  <h3 className="text-xl font-semibold text-white">
+                  <h2 className="text-xl font-semibold text-white">
                     {item.title}
-                  </h3>
+                  </h2>
                 </div>
 
                 <p className="leading-relaxed text-gray-300">

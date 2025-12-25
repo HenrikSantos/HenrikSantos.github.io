@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --emphasis: #ff1c2d;
-  --emphasis-light: #ff3847;
-  --emphasis-dark: #e60012;
+  --emphasis: #c41e2a;
+  --emphasis-light: #e62333;
+  --emphasis-dark: #a11621;
   --accent-blue: #00d4f7;
   --accent-blue-light: #00e8ff;
   --accent-blue-dark: #00b8d9;
