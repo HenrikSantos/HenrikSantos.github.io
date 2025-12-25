@@ -106,18 +106,13 @@ export default function Stack() {
               {category.title}
             </h2>
             <div className="flex flex-wrap gap-2">
-              {category.badges.map((badge, badgeIndex) => (
-                <motion.img
+              {category.badges.map((badge) => (
+                <img
                   key={badge}
                   src={buildBadgeUrl(badge)}
                   alt={badge}
                   className="h-7"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    delay: categoryIndex * 0.1 + badgeIndex * 0.03,
-                  }}
+                  loading="lazy"
                 />
               ))}
             </div>
