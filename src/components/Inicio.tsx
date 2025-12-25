@@ -5,7 +5,10 @@ import { variants, transitions } from "../utils/animations";
 
 export default function Inicio() {
   return (
-    <section className="relative flex min-h-[90vh] flex-col items-center justify-center py-20" id="inicio">
+    <section
+      className="relative flex min-h-[90vh] flex-col items-center justify-center py-20"
+      id="inicio"
+    >
       <ParticlesBackground />
 
       <motion.div
@@ -49,7 +52,12 @@ export default function Inicio() {
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
         </svg>
       </motion.div>
     </section>

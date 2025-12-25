@@ -30,7 +30,7 @@ function initObserver(): void {
     },
     {
       rootMargin: "-30% 0px -70% 0px",
-    }
+    },
   );
 
   SECTIONS.forEach((sectionId) => {

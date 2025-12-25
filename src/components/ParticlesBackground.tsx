@@ -91,7 +91,7 @@ export default function ParticlesBackground() {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   if (!init) {

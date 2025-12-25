@@ -143,7 +143,10 @@ const Header = function () {
       transition={{ duration: 0.5 }}
     >
       <div className="mx-auto flex w-[90%] items-center justify-between 3xl:w-8/12">
-        <motion.div className="flex justify-between" whileHover={{ scale: 1.02 }}>
+        <motion.div
+          className="flex justify-between"
+          whileHover={{ scale: 1.02 }}
+        >
           <a
             href="#inicio"
             onClick={scrollToSection}
@@ -154,43 +157,43 @@ const Header = function () {
         </motion.div>
 
         <nav className="mt-0 flex min-h-full flex-row justify-end gap-1 text-lg font-normal">
-        {navItems.map((item, index) => {
-          const isActive = activeSection === item.href.substring(1);
+          {navItems.map((item, index) => {
+            const isActive = activeSection === item.href.substring(1);
 
-          return (
-            <motion.a
-              key={item.href}
-              href={item.href}
-              onClick={scrollToSection}
-              className={`group relative my-[0.30rem] flex items-center gap-2 rounded-lg p-[0.35rem] px-3 font-semibold tracking-wider transition-colors ${
-                isActive
-                  ? "text-[var(--emphasis)]"
-                  : "text-text-primary hover:text-[var(--accent-blue)]"
-              }`}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 + index * 0.05 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <span className="opacity-70 transition-opacity group-hover:opacity-100">
-                {item.icon}
-              </span>
-              <span>{item.label}</span>
+            return (
+              <motion.a
+                key={item.href}
+                href={item.href}
+                onClick={scrollToSection}
+                className={`group relative my-[0.30rem] flex items-center gap-2 rounded-lg p-[0.35rem] px-3 font-semibold tracking-wider transition-colors ${
+                  isActive
+                    ? "text-[var(--emphasis)]"
+                    : "text-text-primary hover:text-[var(--accent-blue)]"
+                }`}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 + index * 0.05 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="opacity-70 transition-opacity group-hover:opacity-100">
+                  {item.icon}
+                </span>
+                <span>{item.label}</span>
 
-              {/* Underline animado */}
-              <motion.span
-                className="absolute inset-x-3 bottom-0 h-[2px] origin-left bg-[var(--emphasis)]"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: isActive ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
-              />
+                {/* Underline animado */}
+                <motion.span
+                  className="absolute inset-x-3 bottom-0 h-[2px] origin-left bg-[var(--emphasis)]"
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: isActive ? 1 : 0 }}
+                  transition={{ duration: 0.3 }}
+                />
 
-              {/* Underline no hover */}
-              <span className="bg-[var(--emphasis)]/50 absolute inset-x-3 bottom-0 h-[2px] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-            </motion.a>
-          );
-        })}
+                {/* Underline no hover */}
+                <span className="bg-[var(--emphasis)]/50 absolute inset-x-3 bottom-0 h-[2px] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+              </motion.a>
+            );
+          })}
         </nav>
       </div>
     </motion.header>

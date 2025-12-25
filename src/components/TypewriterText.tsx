@@ -41,7 +41,7 @@ export default function TypewriterText({
 
       rafRef.current = requestAnimationFrame(animate);
     },
-    [text, speed]
+    [text, speed],
   );
 
   useEffect(() => {

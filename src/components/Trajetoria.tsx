@@ -150,10 +150,10 @@ export default function Trajetoria() {
         <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-[var(--emphasis)] via-[var(--emphasis)]/50 to-transparent" />
 
         <motion.div
-           variants={variants.staggerContainer}
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, margin: "-50px" }}
+          variants={variants.staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
         >
           {timelineData.map((item, index) => (
             <motion.div

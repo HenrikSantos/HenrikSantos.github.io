@@ -54,17 +54,27 @@ export const variants = {
 };
 
 // Helper for generating variants with custom direction
-export const getDirectionVariant = (direction: "up" | "down" | "left" | "right", distance = 50) => {
+export const getDirectionVariant = (
+  direction: "up" | "down" | "left" | "right",
+  distance = 50,
+) => {
   const axis = direction === "left" || direction === "right" ? "x" : "y";
-  
+
   return {
-    hidden: { 
+    hidden: {
       opacity: 0,
-      [axis]: direction === "left" ? -distance : direction === "right" ? distance : direction === "up" ? distance : -distance
+      [axis]:
+        direction === "left"
+          ? -distance
+          : direction === "right"
+            ? distance
+            : direction === "up"
+              ? distance
+              : -distance,
     },
-    visible: { 
-      opacity: 1, 
-      [axis]: 0 
-    }
+    visible: {
+      opacity: 1,
+      [axis]: 0,
+    },
   };
 };

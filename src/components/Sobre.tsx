@@ -60,8 +60,7 @@ export default function Sobre() {
             aprender.
           </p>
           <p>
-            - Meus hobbies são: programação, arte 2D/3D, jogos, IA e
-            tecnologia.
+            - Meus hobbies são: programação, arte 2D/3D, jogos, IA e tecnologia.
           </p>
           <p>
             E-mail:{" "}
@@ -73,7 +72,7 @@ export default function Sobre() {
             </a>
           </p>
         </div>
-        <motion.ul 
+        <motion.ul
           className="mt-3 flex items-stretch gap-1"
           variants={variants.staggerContainer}
           initial="hidden"
