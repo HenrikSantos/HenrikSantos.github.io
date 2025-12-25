@@ -33,7 +33,7 @@ export default function Inicio() {
       </motion.div>
 
       <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="absolute inset-x-0 bottom-10 flex justify-center"
         initial={{ opacity: 1 }}
         animate={{ y: [0, 8, 0] }}
         transition={{
