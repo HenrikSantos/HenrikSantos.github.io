@@ -36,7 +36,7 @@ export default function Sobre() {
       className="mx-auto my-5 flex flex-col md:sticky md:top-[calc(50vh-12rem)] md:m-0 md:self-start lg:w-6/12"
     >
       <AnimatedSection direction="right" className="mx-8 flex flex-col md:mx-0">
-        <h1 className="text-4xl font-bold">Henrik Santos</h1>
+        <h1 className="text-4xl font-bold">Henrik Ruan Santos de Souza</h1>
         <h2 className="text-xl font-light">
           <span className="emphasis">Desenvolvedor Web</span>
         </h2>
