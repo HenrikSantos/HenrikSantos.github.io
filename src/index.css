@@ -102,6 +102,32 @@ body {
   }
 }
 
+@keyframes color-transition {
+  0%,
+  100% {
+    color: rgba(100, 240, 255, 0.95);
+    text-shadow:
+      0 0 10px rgba(0, 232, 255, 0.6),
+      0 0 30px rgba(0, 232, 255, 0.5),
+      0 0 60px rgba(0, 232, 255, 0.4),
+      0 0 100px rgba(0, 232, 255, 0.3);
+  }
+
+  50% {
+    color: rgba(255, 120, 130, 0.95);
+    text-shadow:
+      0 0 10px rgba(230, 35, 51, 0.6),
+      0 0 30px rgba(230, 35, 51, 0.5),
+      0 0 60px rgba(230, 35, 51, 0.4),
+      0 0 100px rgba(230, 35, 51, 0.3);
+  }
+}
+
+.color-transition-text {
+  animation: color-transition 8s ease-in-out infinite;
+  will-change: color, text-shadow;
+}
+
 ::selection {
   background-color: var(--selection-bg);
   color: var(--selection-text);

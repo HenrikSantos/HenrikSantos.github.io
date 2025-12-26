@@ -27,7 +27,7 @@ export default function Inicio() {
         </motion.h1>
 
         <motion.h1
-          className="neon-text mx-auto my-4 text-center text-6xl font-medium italic underline md:text-8xl"
+          className="color-transition-text mx-auto my-4 text-center text-6xl font-medium italic underline md:text-8xl"
           variants={variants.scaleIn}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
