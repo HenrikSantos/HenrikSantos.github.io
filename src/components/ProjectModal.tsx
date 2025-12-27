@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { buildBadgeUrl } from "../utils/badges";
 import { variants } from "../utils/animations";
+import Badge from "./Badge";
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -35,7 +35,7 @@ export default function ProjectModal({
             onClick={onClose}
           />
           <motion.div
-            className="fixed inset-4 z-50 m-auto flex max-h-[90vh] max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-[var(--primary)] shadow-2xl shadow-[var(--emphasis)]/10 backdrop-blur-md md:inset-10"
+            className="fixed inset-2 z-50 m-auto flex max-h-[95vh] max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-[var(--primary)] shadow-2xl shadow-[var(--emphasis)]/10 backdrop-blur-md sm:inset-4 md:inset-10"
             variants={variants.modal}
             initial="hidden"
             animate="visible"
@@ -63,21 +63,23 @@ export default function ProjectModal({
             </button>
 
             {project.img && (
-              <div className="relative h-64 w-full flex-shrink-0 overflow-hidden">
+              <div className="relative h-48 w-full flex-shrink-0 overflow-hidden sm:h-56 md:h-64">
                 <img
                   src={`/static/images/${project.img}`}
                   alt={project.nome}
-                  className="h-full w-full object-cover object-top"
+                  loading="eager"
+                  decoding="async"
+                  className="size-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary)] to-transparent" />
               </div>
             )}
 
-            <div className="flex-1 overflow-y-auto p-6">
-              <h2 className="mb-3 text-3xl font-bold text-[var(--emphasis)]">
+            <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+              <h2 className="mb-3 text-2xl font-bold text-[var(--emphasis)] sm:text-3xl">
                 {project.nome}
               </h2>
-              <p className="mb-6 text-lg leading-relaxed text-text-primary/90">
+              <p className="mb-6 text-base leading-relaxed text-text-primary/90 sm:text-lg">
                 {project.descricao}
               </p>
 
@@ -87,10 +89,9 @@ export default function ProjectModal({
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.stacks.map((tec) => (
-                    <img
+                    <Badge
                       key={tec}
-                      src={buildBadgeUrl(tec)}
-                      alt={tec}
+                      name={tec}
                       className="h-6"
                     />
                   ))}

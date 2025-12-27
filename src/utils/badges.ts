@@ -1,4 +1,4 @@
-type BadgeConfig = {
+export type BadgeConfig = {
   logo?: string;
   color: string;
 };
@@ -108,6 +108,10 @@ const badgeMap: Record<string, BadgeConfig> = {
 };
 
 const defaultBadge: BadgeConfig = { color: "555555" };
+
+export function getBadgeConfig(name: string): BadgeConfig {
+  return badgeMap[name] || defaultBadge;
+}
 
 export function buildBadgeUrl(name: string): string {
   const config = badgeMap[name] || defaultBadge;

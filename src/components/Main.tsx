@@ -3,7 +3,7 @@ import Sobre from "./Sobre";
 import Stack from "./Stack";
 import Trajetoria from "./Trajetoria";
 import Projetos from "./Projetos";
-import Fomacao from "./Fomacao";
+import Formacao from "./Formacao";
 import Experiencias from "./Experiencias";
 import Contato from "./Contato";
 
@@ -17,7 +17,7 @@ export default function Main() {
           <Trajetoria />
           <Stack />
           <Experiencias />
-          <Fomacao />
+          <Formacao />
           <Projetos />
           <Contato />
         </div>

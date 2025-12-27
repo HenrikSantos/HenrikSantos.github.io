@@ -1,13 +1,13 @@
-const CACHE_NAME = 'henrik-portfolio-v2';
+const CACHE_NAME = 'henrik-portfolio-v3';
 const urlsToCache = [
-  '/',
-  '/index.html',
   '/static/images/code-icon.webp'
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
+    caches.keys()
+      .then((names) => Promise.all(names.map((name) => caches.delete(name))))
+      .then(() => caches.open(CACHE_NAME))
       .then((cache) => cache.addAll(urlsToCache))
   );
   self.skipWaiting();
@@ -31,12 +31,15 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Assets JS/CSS usam network-first (sempre busca a versão mais nova)
-  const isAsset = url.pathname.startsWith('/assets/') ||
-                  url.pathname.endsWith('.js') ||
-                  url.pathname.endsWith('.css');
+  // HTML, JS e CSS usam network-first (sempre busca a versão mais nova)
+  const isNetworkFirst = url.pathname === '/' ||
+                         url.pathname === '/index.html' ||
+                         url.pathname.startsWith('/assets/') ||
+                         url.pathname.endsWith('.js') ||
+                         url.pathname.endsWith('.css') ||
+                         url.pathname.endsWith('.html');
 
-  if (isAsset) {
+  if (isNetworkFirst) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
@@ -53,7 +56,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Outros recursos usam cache-first
+  // Imagens e outros recursos estáticos usam cache-first
   event.respondWith(
     caches.match(event.request)
       .then((response) => {

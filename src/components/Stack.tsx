@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { buildBadgeUrl } from "../utils/badges";
 import AnimatedSection from "./AnimatedSection";
+import Badge from "./Badge";
 
 type BadgeCategory = {
   title: string;
@@ -107,10 +107,9 @@ export default function Stack() {
             </h2>
             <div className="flex flex-wrap gap-2">
               {category.badges.map((badge) => (
-                <img
+                <Badge
                   key={badge}
-                  src={buildBadgeUrl(badge)}
-                  alt={badge}
+                  name={badge}
                   className="h-7"
                   loading="lazy"
                 />

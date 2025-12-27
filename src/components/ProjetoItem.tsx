@@ -1,4 +1,4 @@
-import { buildBadgeUrl } from "../utils/badges";
+import Badge from "./Badge";
 
 interface ProjetoItemProps {
   img?: string;
@@ -26,11 +26,13 @@ export default function ProjetoItem({
       style={{ cursor: onClick ? "pointer" : "default" }}
     >
       {img && (
-        <div className="relative h-48 w-full overflow-hidden">
+        <div className="relative h-40 w-full overflow-hidden sm:h-48 lg:h-56">
           <img
             src={`/static/images/${img}`}
             alt={nome}
-            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+            decoding="async"
+            className="size-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary)] via-transparent to-transparent" />
         </div>
@@ -46,10 +48,9 @@ export default function ProjetoItem({
 
         <div className="mb-4 flex flex-wrap gap-1.5">
           {stacks.slice(0, 5).map((tec) => (
-            <img
+            <Badge
               key={tec}
-              src={buildBadgeUrl(tec)}
-              alt={tec}
+              name={tec}
               className="h-5 transition-transform hover:scale-110"
             />
           ))}

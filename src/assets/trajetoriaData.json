@@ -1,0 +1,40 @@
+[
+  {
+    "period": "Ensino Médio",
+    "title": "Técnico em Programação",
+    "description": "Minha trajetória com tecnologia começou no ensino médio, quando cursei o técnico integrado em programação e computação. Ao concluir essa etapa, não consegui ingressar de imediato no mercado de desenvolvimento, principalmente pelo contexto da época, em que o trabalho remoto ainda não era comum e havia poucas oportunidades na minha cidade.",
+    "icon": "education"
+  },
+  {
+    "period": "Primeira experiência",
+    "title": "Assistente Administrativo",
+    "description": "Diante disso, iniciei minha vida profissional em outras áreas, atuando como assistente administrativo, onde desenvolvi organização, noções de processo e responsabilidade profissional.",
+    "icon": "work"
+  },
+  {
+    "period": "Período de transição",
+    "title": "Varejo e Atendimento",
+    "description": "Com a chegada da pandemia, deixei esse trabalho, pois minha família se mudou para ficar mais próxima da minha avó. Nesse período, trabalhei no varejo, atuando com atendimento ao público e operação de loja, o que contribuiu para o desenvolvimento de comunicação, adaptação e trabalho em equipe.",
+    "icon": "work"
+  },
+  {
+    "period": "2022",
+    "title": "Retomada em Tecnologia",
+    "description": "Retomei de forma estruturada minha carreira em tecnologia. Iniciei um curso profissionalizante em desenvolvimento web e, em seguida, comecei a graduação em Análise e Desenvolvimento de Sistemas, voltando a focar integralmente em programação.",
+    "icon": "education"
+  },
+  {
+    "period": "Primeiro estágio",
+    "title": "Estagiário Full Stack",
+    "description": "Com a evolução dos estudos, conquistei minha primeira oportunidade na área como estagiário full stack em uma startup, atuando com desenvolvimento de chatbots e integração com soluções de IA.",
+    "technologies": ["React", "TypeScript", "Firebase", "Google Cloud"],
+    "icon": "tech"
+  },
+  {
+    "period": "Atualmente",
+    "title": "Desenvolvedor Backend",
+    "description": "Atuo como desenvolvedor backend, trabalhando no desenvolvimento de APIs REST. Atuo na modelagem de banco de dados, implementação de regras de negócio, rotinas agendadas e integrações com APIs externas, enquanto sigo em formação acadêmica e evolução técnica.",
+    "technologies": ["TypeScript", "NestJS", "Prisma", "Express", "PostgreSQL", "MySQL", "MongoDB", "AWS"],
+    "icon": "tech"
+  }
+]

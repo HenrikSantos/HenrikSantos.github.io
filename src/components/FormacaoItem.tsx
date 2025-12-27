@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { buildBadgeUrl } from "../utils/badges";
+import Badge from "./Badge";
 
 interface FormacaoItemProps {
   nomeInstituicao: string;
@@ -22,26 +22,28 @@ export default function FormacaoItem({
 }: FormacaoItemProps) {
   return (
     <motion.div
-      className="relative border-l-2 border-[var(--emphasis)]/30 pl-6"
+      className="timeline-line relative"
       initial={{ opacity: 0, x: -30 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-2 border-[var(--emphasis)] bg-[var(--primary)]" />
+      <div className="timeline-marker" />
 
-      <h1 className="emphasis text-2xl font-semibold">{nomeInstituicao}</h1>
+      <h1 className="emphasis text-xl font-semibold sm:text-2xl">
+        {nomeInstituicao}
+      </h1>
       <h2 className="text-lg">{`${diploma}, ${areaDeEstudo}`}</h2>
       <p className="mb-2 text-sm font-extralight text-text-primary/60">
         {`${dataInicio} - ${dataFim}`}
       </p>
       <div className="flex flex-wrap gap-2">
         {competencias.map((competencia, i) => (
-          <motion.img
+          <Badge
             key={competencia}
-            src={buildBadgeUrl(competencia)}
-            alt={competencia}
+            name={competencia}
             className="h-5"
+            animated
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}

@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .glass-card {
+    @apply rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(196, 30, 42, 0.3);
+    @apply bg-white/10;
+  }
+
+  .btn-secondary {
+    @apply flex items-center gap-2 rounded-lg border border-white/20 bg-white/5
+           px-4 py-2 font-medium backdrop-blur-sm transition-all;
+    color: var(--text-primary);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--emphasis);
+    background-color: rgba(196, 30, 42, 0.2);
+  }
+
+  .timeline-marker {
+    @apply absolute -left-[9px] top-0 size-4 rounded-full border-2;
+    border-color: var(--emphasis);
+    background-color: var(--primary);
+  }
+
+  .timeline-line {
+    @apply pl-6;
+    border-left: 2px solid rgba(196, 30, 42, 0.3);
+  }
+}
+
 :root {
   --emphasis: #c41e2a;
   --emphasis-light: #e62333;
@@ -24,11 +57,6 @@
 
   --selection-bg: rgba(36, 192, 235, 0.3);
   --selection-text: #ffffff;
-
-  --neon-shadow-1: rgba(255, 255, 255, 0.4);
-  --neon-shadow-2: rgba(36, 192, 235, 0.25);
-  --neon-shadow-3: rgba(255, 255, 255, 0.5);
-  --neon-shadow-4: rgba(36, 192, 235, 0.35);
 
   --gradient-red-start: rgba(255, 60, 40, 0.15);
   --gradient-blue-start: rgba(10, 185, 230, 0.15);
@@ -71,35 +99,8 @@ body {
   @apply bg-[var(--primary)];
 }
 
-.secondary {
-  @apply bg-[var(--secondary)];
-}
-
 .emphasis {
   @apply text-[var(--emphasis)];
-}
-
-.neon-text {
-  color: var(--text-white);
-  text-shadow:
-    0 0 10px var(--neon-shadow-1),
-    0 0 30px var(--neon-shadow-2);
-  animation: neon-pulse 4s ease-in-out infinite alternate;
-  will-change: text-shadow;
-}
-
-@keyframes neon-pulse {
-  from {
-    text-shadow:
-      0 0 10px var(--neon-shadow-1),
-      0 0 30px var(--neon-shadow-2);
-  }
-
-  to {
-    text-shadow:
-      0 0 15px var(--neon-shadow-3),
-      0 0 40px var(--neon-shadow-4);
-  }
 }
 
 @keyframes color-transition {
